@@ -46,26 +46,26 @@
 
       <li><a href="../home/index.html">Home</a></li>
 
-      
+
       <li class="global-links"><a href="https://tmc.mooc.fi/mooc">TMC</a></li>
-      
+
       <li class="global-links"><a href="https://wiki.aalto.fi/display/C/C-ohjelmointi+vinkkiwiki">Vinkkiwiki</a></li>
-      
+
       <li><a href="../instructions/index.html">Instructions</a></li>
 
-      
+
       <li><a href="../Module_1/index.html">M1: Introduction</a></li>
-      
+
       <li><a href="../Module_2/index.html">M2: Pointers</a></li>
-      
+
       <li><a href="../Module_3/index.html">M3: Dynamic memory</a></li>
-      
+
       <li><a href="index.html">M4: Arrays and Bits</a></li>
-      
+
       <li><a href="../Module_5/index.html">M5: Advanced features</a></li>
-      
+
       <li><a href="../Module_6/index.html">M6: Course summary</a></li>
-      
+
 
     </ul>
   </div>
@@ -83,89 +83,89 @@
                     <li><img src="../static/aalto-elec-s.jpg" class="img-responsive"></li>
                     <li><a href="http://mooc.fi/courses/2016/aalto-c">C-MOOC - MOOC.fi</a></li>
                 </ul>
-                
 
-    
+
+
 <ul class="nav bs-sidenav">
     <b>Jump to:</b>
-    
-    
-    
+
+
+
     <li class="content-sidenav-link">
         <a href="#01_structure">
         1. More structured data types
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-01-en">
             <b>Task:</b> 01_anydata (2)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#02_multiarray">
         2. Multidimensional arrays
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-02-en">
             <b>Task:</b> 02_life (4)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#03_cmdline">
         3. Command line arguments
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-03-en">
             <b>Task:</b> 03_strarray (4)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#04_bits">
         4. Bit operations
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-04-en">
             <b>Task:</b> 04_ip (4)
         </a>
     </li>
-    
+
     </a></li>
-    
+
 </ul>
 
 
@@ -177,10 +177,10 @@
 
 		<div class="col-lg-7" id="content">
 
-		    
-		    
 
-		    
+
+
+
 
     <p>
 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
@@ -188,12 +188,12 @@
 </a>
 </p>
 
-    
-        
+
+
         <div class="content-block" id="01_structure">
     <h1 class="content-title">More structured data types</h1>
     <div class="content-body">
-    
+
       <h2>Union</h2>
 <p><strong>Union</strong> is a structured type that can contain different types of
 objects. Its definition looks similar to the definition of structure,
@@ -333,7 +333,7 @@ enumeration definition and its use:</p>
     <span class="k">case</span> <span class="nl">BLUE</span><span class="p">:</span>
         <span class="n">printf</span><span class="p">(</span><span class="s">&quot;blue</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
         <span class="k">break</span><span class="p">;</span>
-    <span class="p">}</span> 
+    <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </td></tr></table>
@@ -535,9 +535,9 @@ using correct output format specifiers.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-01-en">
     <div class="panel panel-primary">
 
@@ -547,7 +547,7 @@ using correct output format specifiers.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Getting familiar with operating on unions.</p>
 <p>This exercise introduces a structured data type, <strong>AnyData</strong>, that can
 hold either byte (i.e., char), integer or double value (note that the
@@ -573,13 +573,13 @@ functions given in 'anydata.c', depending on the actual AnyData type
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="02_multiarray">
     <h1 class="content-title">Multidimensional arrays</h1>
     <div class="content-body">
-    
+
       <h2>Static arrays</h2>
 <p>C supports also multidimensional arrays. In general, any number of
 array dimensions is possible, but here we focus just on
@@ -944,9 +944,9 @@ locations, 20 bytes each.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-02-en">
     <div class="panel panel-primary">
 
@@ -956,7 +956,7 @@ locations, 20 bytes each.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> practice allocating and manipulating dynamic
   two-dimensional arrays.</p>
 <p>Conway's <a href="http://en.m.wikipedia.org/wiki/Conway%27s_Game_of_Life">Game of Life</a> is a traditional zero-player game that runs a
@@ -1053,13 +1053,13 @@ release it.)</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="03_cmdline">
     <h1 class="content-title">Command line arguments</h1>
     <div class="content-body">
-    
+
       <p>Command line parameters are a traditional form of passing instructions
 and information to the program when it is started from a command line
 terminal interface (or from a script). With graphical user interfaces
@@ -1118,9 +1118,9 @@ option format. Typically the options can be given in any order.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-03-en">
     <div class="panel panel-primary">
 
@@ -1130,7 +1130,7 @@ option format. Typically the options can be given in any order.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Practice the use of dynamically allocated arrays that
 consist of dynamically allocated strings.</p>
 <p>This exercise manipulates an array that contains pointers to
@@ -1174,13 +1174,13 @@ returns <em>smaller than 0</em>, the first string is before the second; if it re
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="04_bits">
     <h1 class="content-title">Bit operations</h1>
     <div class="content-body">
-    
+
       <h2>Binary system</h2>
 <p>In binary (base-2) numeral system all numbers are presented with two
 symbols (<strong>bits</strong>), 0 or 1. Binary arithmetics have been traditionally
@@ -1542,9 +1542,9 @@ a piece of code that does conversion to big-endian byte order.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-04-en">
     <div class="panel panel-primary">
 
@@ -1554,7 +1554,7 @@ a piece of code that does conversion to big-endian byte order.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Practice bit manipulation through practical real-world
 example.</p>
 <p>The IP (version 4) protocol is used in nearly all Internet
@@ -1609,8 +1609,8 @@ your implementation.</p>
     </div>
 </div>
 
-        
-    
+
+
 
 
 

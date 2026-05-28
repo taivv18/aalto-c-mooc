@@ -46,26 +46,26 @@
 
       <li><a href="../home/index.html">Home</a></li>
 
-      
+
       <li class="global-links"><a href="https://tmc.mooc.fi/mooc">TMC</a></li>
-      
+
       <li class="global-links"><a href="https://wiki.aalto.fi/display/C/C-ohjelmointi+vinkkiwiki">Vinkkiwiki</a></li>
-      
+
       <li><a href="../instructions/index.html">Instructions</a></li>
 
-      
+
       <li><a href="../Module_1/index.html">M1: Introduction</a></li>
-      
+
       <li><a href="index.html">M2: Pointers</a></li>
-      
+
       <li><a href="../Module_3/index.html">M3: Dynamic memory</a></li>
-      
+
       <li><a href="../Module_4/index.html">M4: Arrays and Bits</a></li>
-      
+
       <li><a href="../Module_5/index.html">M5: Advanced features</a></li>
-      
+
       <li><a href="../Module_6/index.html">M6: Course summary</a></li>
-      
+
 
     </ul>
   </div>
@@ -83,173 +83,173 @@
                     <li><img src="../static/aalto-elec-s.jpg" class="img-responsive"></li>
                     <li><a href="http://mooc.fi/courses/2016/aalto-c">C-MOOC - MOOC.fi</a></li>
                 </ul>
-                
 
-    
+
+
 <ul class="nav bs-sidenav">
     <b>Jump to:</b>
-    
-    
-    
+
+
+
     <li class="content-sidenav-link">
         <a href="#01_pointers">
         1. Pointers
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-1-en">
             <b>Task:</b> 02_basics_1 (1)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#02_pointers2">
         2. Address arithmetics
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-2-en">
             <b>Task:</b> 02_basics_2 (1)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#03_arrays">
         3. Arrays
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-3-en">
             <b>Task:</b> 02_basics_3 (1)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-master-en">
             <b>Task:</b> 03_mastermind (1)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-en">
             <b>Task:</b> 04_sort (1)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#06_strings">
         4. Strings
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-1-en">
             <b>Task:</b> 06_strbasic_1 (1)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#04_qualifiers">
         5. Helpful Qualifiers and Operators
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#05_precedence">
         6. Precedence
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#07_strings2">
         7. Strings
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-2-en">
             <b>Task:</b> 06_strbasic_2 (1)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-en">
             <b>Task:</b> 07_altstring (4)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-en">
             <b>Task:</b> 08_korso (1)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-en">
             <b>Task:</b> 09_stringarray (2)
         </a>
     </li>
-    
+
     </a></li>
-    
+
 </ul>
 
 
@@ -261,10 +261,10 @@
 
 		<div class="col-lg-7" id="content">
 
-		    
-		    
 
-		    
+
+
+
 
     <p>
 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
@@ -272,12 +272,12 @@
 </a>
 </p>
 
-    
-        
+
+
         <div class="content-block" id="01_pointers">
     <h1 class="content-title">Pointers</h1>
     <div class="content-body">
-    
+
       <p>Pointers are a fundamental part of C programming, and typically necessary in any non-trivial software functionality. The ability to directly operate with pointers and memory is one of the differentiating factors between C and many other (higher-level) programming languages. Unfortunately, the ability to directly operate with (virtual) memory also introduces various ways for errors that are sometimes hard to trace.</p>
 <h2>Background</h2>
 <p>Variables declared in the program code allocate memory space that depends on the type of variable. For example, a <em>char</em> variable uses one byte (8 bits) of memory, and <em>int</em> (usually) uses four bytes (32 bits) in memory. For local variables the system allocates the needed memory space automatically when the variable is declared, and releases the memory when execution exits the program block or function where the variable was declared. After exiting a function or program block (the section framed with curly brackets), the compiler does not allow using the variables introduced inside the block, but returns an error in response to such attempt.</p>
@@ -501,9 +501,9 @@ Segmentation fault: 11
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-1-en">
     <div class="panel panel-primary">
 
@@ -513,7 +513,7 @@ Segmentation fault: 11
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> A simple basic example to practice the use of pointers.</p>
 <p>Implement function <code>number_swap(int *a, int *b)</code> that gets two
 pointers to integers as parameters. The function should swap the
@@ -535,13 +535,13 @@ value of val1 should become 5, and value of val2 should become 4.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="02_pointers2">
     <h1 class="content-title">Address arithmetics</h1>
     <div class="content-body">
-    
+
       <h2>Address arithmetics</h2>
 <p>Plus and minus arithmetic operators can be used also on pointers. These cause the pointer to be moved either forward or backward by the given number of objects of the size of referenced data unit. Therefore, the adjustment in the address depends on the size of the data type behind the pointer.</p>
 <p>Here is an example that demonstrates address arithmetics in different formats:</p>
@@ -621,9 +621,9 @@ value of val1 should become 5, and value of val2 should become 4.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-2-en">
     <div class="panel panel-primary">
 
@@ -633,7 +633,7 @@ value of val1 should become 5, and value of val2 should become 4.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Practice address arithmetics with pointers.</p>
 <p>You should implement function int array_sum(int *array, int count)
 that gets a pointer to the beginning of array of integers in
@@ -653,13 +653,13 @@ count. The sum is returned as the return value of the function.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="03_arrays">
     <h1 class="content-title">Arrays</h1>
     <div class="content-body">
-    
+
       <p><a name="arrays"></a></p>
 <h2>Basics</h2>
 <p>Multiple values of a given data type in consecutive memory slots is called an array. When array is declared, its size is given so that the system to allocate enough memory for the array. In variable declaration, array size is indicated using square brackets.</p>
@@ -786,7 +786,7 @@ array element 3 is 4
         <span class="c1">// Therefore, this cannot be used together with indexing, as above.</span>
         <span class="c1">// Modification of pointer &#39;a&#39; is not visible outside the function.</span>
         <span class="c1">//printf(&quot;%d &quot;, *a++);</span>
-    <span class="p">}</span>   
+    <span class="p">}</span>
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
 <span class="p">}</span>
 
@@ -807,9 +807,9 @@ array element 3 is 4
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-3-en">
     <div class="panel panel-primary">
 
@@ -819,7 +819,7 @@ array element 3 is 4
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Practice use of arrays and array notation together with
 scanf.</p>
 <p>Implement function <code>int array_reader(int *vals, int n)</code> that reads
@@ -861,9 +861,9 @@ fifth field read is not a decimal number:</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-master-en">
     <div class="panel panel-primary">
 
@@ -873,7 +873,7 @@ fifth field read is not a decimal number:</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Practice manipulation of arrays.</p>
 <p>Implement function <code>void mastermind(const int *solution, const int
 *guess, char *result, unsigned int len)</code> that compares integer array
@@ -910,9 +910,9 @@ can use to test your function.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-en">
     <div class="panel panel-primary">
 
@@ -922,7 +922,7 @@ can use to test your function.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Further practice of array manipulation, this time with
 a bit more complicated case.</p>
 <p>Write function <code>void sort(int *start, int size)</code> that sorts the
@@ -937,13 +937,13 @@ processed. Test the function with different arrays of different size.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="06_strings">
     <h1 class="content-title">Strings</h1>
     <div class="content-body">
-    
+
       <h2>Basics</h2>
 <p>The C language does not have any particular string abstraction, but strings in C are just <strong>char</strong> type arrays that end in '\0' - character (that represents numeric value 0). The final 0-charater is not visible, but it still uses one byte of memory in the end of the string.</p>
 <p>String constants can be specified inside quotes, for example in the following way:</p>
@@ -1001,9 +1001,9 @@ processed. Test the function with different arrays of different size.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-1-en">
     <div class="panel panel-primary">
 
@@ -1013,7 +1013,7 @@ processed. Test the function with different arrays of different size.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Get familiar with operating on a string, character by
 character until the end of the string.</p>
 <p>Write function <code>int count_alpha(const char *str)</code> that counts the
@@ -1030,13 +1030,13 @@ characters.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="04_qualifiers">
     <h1 class="content-title">Helpful Qualifiers and Operators</h1>
     <div class="content-body">
-    
+
       <h2>Size of variable or data type</h2>
 <p>The sizeof operator can be used to query the size of a data type or variable (the size of same data type may differ between different system architectures). Here is a short example illustrating the use of sizeof:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
@@ -1102,13 +1102,13 @@ characters.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="05_precedence">
     <h1 class="content-title">Precedence</h1>
     <div class="content-body">
-    
+
       <p><a name="precedence"></a></p>
 <p>Understanding the order of evaluation of different operators between is important, because that affects the outcome of expressions. If precedence rules are not properly understood, tracking down invalid behavior is difficult. For example, in the case of pointer arithmetics, a forgotten pair of parenthesis may lead to invalid caluclation, and invalid memory reference.</p>
 <p>An (incomplete) list of the order of evaluation between different operators is listed below. Table 2-1 on page 53 of the K&amp;R book gives a complete list of all the C operators and their precedence. When evaluating an expression, the operators on the top of the list are evaluated before the operators below them (some of the operators are introduced only in the next module).</p>
@@ -1146,13 +1146,13 @@ characters.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="07_strings2">
     <h1 class="content-title">Strings</h1>
     <div class="content-body">
-    
+
       <h2>Functions for string handling</h2>
 <p>The standard library contains functions that are helpful in operating with strings. They are defined in include header <strong><string.h></strong>, so if you want to use them, add <code>#include &lt;string.h&gt;</code> in your program. The detailed descriptions of the functions can be found in the Unix manual pages, that can be accessed by the "man" command in the command line shell, or use the man content provided in the <a href="http://linux.die.net/man/3/">web</a>.</p>
 <ul>
@@ -1217,9 +1217,9 @@ buffer: PaasikiviKekkonenKoivistoAhtisaariHalon, length: 39</pre>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-2-en">
     <div class="panel panel-primary">
 
@@ -1229,7 +1229,7 @@ buffer: PaasikiviKekkonenKoivistoAhtisaariHalon, length: 39</pre>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Practice the use of string functions (although the
 exercise could be done without them as well).</p>
 <p>Write function <code>int count_substr(const char *str, const char *sub)</code>
@@ -1249,9 +1249,9 @@ processing from the pointed location.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-en">
     <div class="panel panel-primary">
 
@@ -1261,7 +1261,7 @@ processing from the pointed location.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> How do the string functions really work? This exercise
 might help understanding them.</p>
 <p>For this task we assume a new kind of string that does not end at '\0'
@@ -1325,9 +1325,9 @@ replaced, because the tokenizer stops at the end of the string.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-en">
     <div class="panel panel-primary">
 
@@ -1337,7 +1337,7 @@ replaced, because the tokenizer stops at the end of the string.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Get more familiar with character-by-character string manipulation.</p>
 <p>(<em>To non-Finnish students: with this exercise you will also get to
 practice modern Finnish language. This exercise is a tribute to the
@@ -1366,9 +1366,9 @@ kuljettajaa niinku mäkeä alas".</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-en">
     <div class="panel panel-primary">
 
@@ -1378,7 +1378,7 @@ kuljettajaa niinku mäkeä alas".</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Take a advance peek into arrays of strings (which are
 essentially two-dimensional arrays).</p>
 <p>Also strings can be placed in arrays. Because string is an array of
@@ -1408,8 +1408,8 @@ character with notation <code>arr[i][j]</code>, either for reading or writing.</
     </div>
 </div>
 
-        
-    
+
+
 
 
 

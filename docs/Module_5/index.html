@@ -46,26 +46,26 @@
 
       <li><a href="../home/index.html">Home</a></li>
 
-      
+
       <li class="global-links"><a href="https://tmc.mooc.fi/mooc">TMC</a></li>
-      
+
       <li class="global-links"><a href="https://wiki.aalto.fi/display/C/C-ohjelmointi+vinkkiwiki">Vinkkiwiki</a></li>
-      
+
       <li><a href="../instructions/index.html">Instructions</a></li>
 
-      
+
       <li><a href="../Module_1/index.html">M1: Introduction</a></li>
-      
+
       <li><a href="../Module_2/index.html">M2: Pointers</a></li>
-      
+
       <li><a href="../Module_3/index.html">M3: Dynamic memory</a></li>
-      
+
       <li><a href="../Module_4/index.html">M4: Arrays and Bits</a></li>
-      
+
       <li><a href="index.html">M5: Advanced features</a></li>
-      
+
       <li><a href="../Module_6/index.html">M6: Course summary</a></li>
-      
+
 
     </ul>
   </div>
@@ -83,117 +83,117 @@
                     <li><img src="../static/aalto-elec-s.jpg" class="img-responsive"></li>
                     <li><a href="http://mooc.fi/courses/2016/aalto-c">C-MOOC - MOOC.fi</a></li>
                 </ul>
-                
 
-    
+
+
 <ul class="nav bs-sidenav">
     <b>Jump to:</b>
-    
-    
-    
+
+
+
     <li class="content-sidenav-link">
         <a href="#01_io">
         1. Input/Output
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-1-en">
             <b>Task:</b> 01_filedump (2)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-2-en">
             <b>Task:</b> 02_stats (2)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-3-en">
             <b>Task:</b> 03_base64 (2)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#02_precompiler">
         2. Preprocessor
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-4-en">
             <b>Task:</b> 04_arraytool (3)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#03_arglists">
         3. Variable length argument lists
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-5-en">
             <b>Task:</b> 05_myprint (1)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#04_funcptr">
         4. Function pointers
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-6-en">
             <b>Task:</b> 05_sheet (4)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#05_funcs">
         5. Some useful functions
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
+
 </ul>
 
 
@@ -205,10 +205,10 @@
 
 		<div class="col-lg-7" id="content">
 
-		    
-		    
 
-		    
+
+
+
 
     <p>
 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
@@ -216,12 +216,12 @@
 </a>
 </p>
 
-    
-        
+
+
         <div class="content-block" id="01_io">
     <h1 class="content-title">Input/Output</h1>
     <div class="content-body">
-    
+
       <p>In C input and output happens through <strong>I/O streams</strong>. I/O stream is
 an abstraction for delivery of ordered sequence of unstructured
 data. So far we have used two streams that are open by default in C
@@ -621,7 +621,7 @@ $ ./a.out
 10 items read
 0 items read, EOF indicator is set
 
-$ hexdump -C intarray 
+$ hexdump -C intarray
 00000000  01 00 00 00 00 00 00 00  fe ff ff ff 03 00 00 00  |................|
 00000010  0a 00 00 00 04 00 00 00  03 00 00 00 02 00 00 00  |................|
 00000020  03 00 00 00 09 00 00 00                           |........|
@@ -631,9 +631,9 @@ $ hexdump -C intarray
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-1-en">
     <div class="panel panel-primary">
 
@@ -643,7 +643,7 @@ $ hexdump -C intarray
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Practice basic file reading.</p>
 <p>Implement functions <strong>textdump</strong> and <strong>hexdump</strong> that will read
 the given file (the file name in <strong>filename</strong> parameter) and print
@@ -662,17 +662,17 @@ by space. A line can have at most 16 hexadecimal numbers, after that a
 new line is started. Also the number at the end of the line should
 have a trailing space following it. Here is an example output:</p>
 <pre>
-0e 54 65 65 6d 75 20 54 65 65 6b 6b 61 72 69 30 
-30 30 30 30 41 00 00 14 45 4c 45 43 2d 41 31 31 
+0e 54 65 65 6d 75 20 54 65 65 6b 6b 61 72 69 30
+30 30 30 30 41 00 00 14 45 4c 45 43 2d 41 31 31
 30 30 00 00 00 00 00 00 00 </pre>
         </div>
 
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-2-en">
     <div class="panel panel-primary">
 
@@ -682,7 +682,7 @@ have a trailing space following it. Here is an example output:</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> More practice on file processing</p>
 <p>Implement functions to calculate the following metrics from a given
 file:</p>
@@ -707,9 +707,9 @@ compare results with this function)</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-3-en">
     <div class="panel panel-primary">
 
@@ -719,7 +719,7 @@ compare results with this function)</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective</strong>: Practice file input and output, with some bitwise
   operations.</p>
 <p><strong>Note</strong>: This is may be the hardest task in module 5. If you are
@@ -802,13 +802,13 @@ as needed.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="02_precompiler">
     <h1 class="content-title">Preprocessor</h1>
     <div class="content-body">
-    
+
       <p>The preprocessor processes the C code before passing it to the actual
 C compiler that produces the binary object code. The preprocessor, for
 example, removes the comments from the code, and executes preprocessor
@@ -1009,9 +1009,9 @@ not be able to compile the code, and produce compilation error.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-4-en">
     <div class="panel panel-primary">
 
@@ -1021,7 +1021,7 @@ not be able to compile the code, and produce compilation error.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Practice use of parametrized macros, for operating with
   arrays (of generic type).</p>
 <p>This exercise does not contain other *.c files than main.c (and the
@@ -1050,13 +1050,13 @@ with failing condition.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="03_arglists">
     <h1 class="content-title">Variable length argument lists</h1>
     <div class="content-body">
-    
+
       <p>Usually the number and type of arguments in C functions are
 fixed. However, there are situations when the exact number of
 parameters or their type cannot be determined. The most common example
@@ -1138,9 +1138,9 @@ knows the number of arguments.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-5-en">
     <div class="panel panel-primary">
 
@@ -1150,7 +1150,7 @@ knows the number of arguments.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective</strong>: Learn variable length argument lists</p>
 <p>Implement function <strong>myprint</strong> that prints a variable number of
 integers to standard output stream following the format indicated by a
@@ -1190,13 +1190,13 @@ I just printed 3 integers</pre>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="04_funcptr">
     <h1 class="content-title">Function pointers</h1>
     <div class="content-body">
-    
+
       <p>So far we have considered functions as static entities that have a
 fixed name and a specified functionality. Because all code is located
 in its dedicated (read-only) virtual memory area, <strong>all functions can
@@ -1526,9 +1526,9 @@ assignment (line 32).</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-6-en">
     <div class="panel panel-primary">
 
@@ -1538,7 +1538,7 @@ assignment (line 32).</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective</strong>: Practice use of function pointers. This exercise also
   revisits various other recent topics such as typedefs, unions,
   two-dimensional arrays, etc.</p>
@@ -1653,13 +1653,13 @@ subsequently call other functions.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="05_funcs">
     <h1 class="content-title">Some useful functions</h1>
     <div class="content-body">
-    
+
       <h2>Operations on characters</h2>
 <p>The <b>ctype.h</b> header contains functions for testing and handling
 the characters in the system. The functions can be used, for example,
@@ -1845,8 +1845,8 @@ generator can be initialized with a given seed using the
     </div>
 </div>
 
-        
-    
+
+
 
 
 
