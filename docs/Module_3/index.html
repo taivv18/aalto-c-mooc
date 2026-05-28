@@ -46,26 +46,26 @@
 
       <li><a href="../home/index.html">Home</a></li>
 
-      
+
       <li class="global-links"><a href="https://tmc.mooc.fi/mooc">TMC</a></li>
-      
+
       <li class="global-links"><a href="https://wiki.aalto.fi/display/C/C-ohjelmointi+vinkkiwiki">Vinkkiwiki</a></li>
-      
+
       <li><a href="../instructions/index.html">Instructions</a></li>
 
-      
+
       <li><a href="../Module_1/index.html">M1: Introduction</a></li>
-      
+
       <li><a href="../Module_2/index.html">M2: Pointers</a></li>
-      
+
       <li><a href="index.html">M3: Dynamic memory</a></li>
-      
+
       <li><a href="../Module_4/index.html">M4: Arrays and Bits</a></li>
-      
+
       <li><a href="../Module_5/index.html">M5: Advanced features</a></li>
-      
+
       <li><a href="../Module_6/index.html">M6: Course summary</a></li>
-      
+
 
     </ul>
   </div>
@@ -83,136 +83,136 @@
                     <li><img src="../static/aalto-elec-s.jpg" class="img-responsive"></li>
                     <li><a href="http://mooc.fi/courses/2016/aalto-c">C-MOOC - MOOC.fi</a></li>
                 </ul>
-                
 
-    
+
+
 <ul class="nav bs-sidenav">
     <b>Jump to:</b>
-    
-    
-    
+
+
+
     <li class="content-sidenav-link">
         <a href="#01_memorg">
         1. Memory organization
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#02_dynamic">
         2. Dynamic memory management
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-1-en">
             <b>Task:</b> 02_arrays_1 (1)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-2-en">
             <b>Task:</b> 02_arrays_2 (1)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#03_memfuncs">
         3. Some memory management functions
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-03-en">
             <b>Task:</b> 03_join (1)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#04_structures">
         4. Data Structures
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-04-en">
             <b>Task:</b> 04_vessel (1)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#05_abstract">
         5. Abstract Data Types
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-05-en">
             <b>Task:</b> 05_fraction (4)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-06-en">
             <b>Task:</b> 06_oodi (3)
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="content-sidenav-link">
         <a href="#06_linkedlist">
         6. Linked list
-        
+
         </a>
     </li>
-    
+
     </a></li>
-    
-    
+
+
     <li class="task-sidenav-link">
         <a href="#desc-07-en">
             <b>Task:</b> 07_queue (3)
         </a>
     </li>
-    
+
     </a></li>
-    
+
 </ul>
 
 
@@ -224,10 +224,10 @@
 
 		<div class="col-lg-7" id="content">
 
-		    
-		    
 
-		    
+
+
+
 
     <p>
 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="license">
@@ -235,14 +235,14 @@
 </a>
 </p>
 
-    
-        
+
+
         <div class="content-block" id="01_memorg">
     <h1 class="content-title">Memory organization</h1>
     <div class="content-body">
-    
+
       <p><font size=-2><i>Last modified: 2016-02-29 (Added a link to stack/heap YouTube video)</i></font></p>
-    
+
       <p>The modern computer systems typically use <strong>virtual memory</strong>, that
 provides each process a dedicated memory space: each process sees only
 its own virtual memory space, and cannot access the memory of other
@@ -297,13 +297,13 @@ out at some point.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="02_dynamic">
     <h1 class="content-title">Dynamic memory management</h1>
     <div class="content-body">
-    
+
       <h2>Allocating and releasing memory</h2>
 <p>New memory from heap can be allocated using the <code>malloc</code>
 function call, that is defined in <b>stdlib.h</b> header (like the
@@ -605,9 +605,9 @@ error lines should go away.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-1-en">
     <div class="panel panel-primary">
 
@@ -617,7 +617,7 @@ error lines should go away.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Practice use of dynamic memory allocation with integer arrays</p>
 <p>Implement function <strong>dyn_reader</strong> that allocates an <em>int</em> array for
 <em>n</em> integers. <em>n</em> is given as argument to the function when it is
@@ -630,9 +630,9 @@ function returns pointer to the dynamically allocated array.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-2-en">
     <div class="panel panel-primary">
 
@@ -642,7 +642,7 @@ function returns pointer to the dynamically allocated array.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Practice use of <em>realloc</em> together with array
   manipulation.</p>
 <p>Implement function <strong>add_to_array</strong> that adds a single integer to the
@@ -656,13 +656,13 @@ correctly when called several consecutive times.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="03_memfuncs">
     <h1 class="content-title">Some memory management functions</h1>
     <div class="content-body">
-    
+
       <p>The <code>string.h</code> header defines some functions for manipulating the
 memory content that may be useful in different situations. The main
 difference to the string functions discussed in <a href="../Module_2/index.html#strings">Module 2</a> is, that
@@ -774,9 +774,9 @@ strings, and therefore work with any data content.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-03-en">
     <div class="panel panel-primary">
 
@@ -786,7 +786,7 @@ strings, and therefore work with any data content.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Practice use of memory management functions, and
   creating your source file and the related header definition from
   scratch.</p>
@@ -818,13 +818,13 @@ matches the interface that <em>main.c</em> assumes.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="04_structures">
     <h1 class="content-title">Data Structures</h1>
     <div class="content-body">
-    
+
       <p>Related data can be collected together as structured data
 types. Structured data type can be assigned a name, so that it can be
 used for variables, function parameters, and so on. Structure may at
@@ -1368,9 +1368,9 @@ some of the structure members need to be declared afterwards.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-04-en">
     <div class="panel panel-primary">
 
@@ -1380,9 +1380,9 @@ some of the structure members need to be declared afterwards.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><font size=-2><i>Last modified: 2016-03-11 (Couple of words about pointers and use of malloc)</i></font></p>
-          
+
             <p><strong>Objective:</strong> Practice definition of structures, and their basic use.</p>
 <p>In this exercise you will need to implement three things to earn a
 point 1) define a <strong>vessel</strong> structure; 2) implement function
@@ -1444,13 +1444,13 @@ Bananas
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="05_abstract">
     <h1 class="content-title">Abstract Data Types</h1>
     <div class="content-body">
-    
+
       <p>Often a good programming practice is to hide details of data
 management into abstract data types that allow the handling only
 through a published interface, that hides the internal implementation
@@ -1666,9 +1666,9 @@ unchanged.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-05-en">
     <div class="panel panel-primary">
 
@@ -1678,7 +1678,7 @@ unchanged.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p>We practice abstract data types by implementing a new number type,
 <a href="http://en.wikipedia.org/wiki/Fraction_(mathematics)">fraction</a>, that consists of numerator and denominator. For example
 2/3 and 4/6 are equivalent values, where 2 and 4 are numerators, and 3
@@ -1741,9 +1741,9 @@ you can use from your function.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-06-en">
     <div class="panel panel-primary">
 
@@ -1753,7 +1753,7 @@ you can use from your function.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Practice use of data structures, as a member of
   dynamically allocated (and re-sized) array.</p>
 <p>Implement a simplified database for storing course grades. Each
@@ -1810,13 +1810,13 @@ entries with same student ID and code.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="content-block" id="06_linkedlist">
     <h1 class="content-title">Linked list</h1>
     <div class="content-body">
-    
+
       <p><a href="http://en.wikipedia.org/wiki/Linked_list">Linked list</a> is a common data structure based on dynamically allocated
 nodes linked with pointers between the nodes. There are different variants
 of linked lists, but here we discuss a basic list with a pointer to
@@ -1896,9 +1896,9 @@ may need special attention.</p>
     </div>
 </div>
 
-        
-    
-        
+
+
+
         <div class="task-description-block" id="desc-07-en">
     <div class="panel panel-primary">
 
@@ -1908,7 +1908,7 @@ may need special attention.</p>
         </div>
 
 	<div class="panel-body">
-	  
+
             <p><strong>Objective:</strong> Practice structure and pointer manipulation together
 with linked list, a common data structure in C programs.</p>
 <p>This exercise implements a simple queue that holds student IDs and
@@ -1971,8 +1971,8 @@ several times, only the first entry is removed.</p>
     </div>
 </div>
 
-        
-    
+
+
 
 
 

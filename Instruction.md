@@ -30,9 +30,10 @@ You can find the course material here:
 2. Read through the course material.
 3. Do the exercises (found in the `exercises` folder) when you encounter them in the material.
 4. Run `make run-main` to see your source in action.
-5. Run `make run-test` to check your solutions.
-6. Pass all the tests.
-7. Keep going!
+5. Run `make clean` to force a fresh re-compilation or to reduce package size before submission.
+6. Run `make run-test` to check your solutions.
+7. Pass all the tests.
+8. Keep going!
 
 ## License
 
