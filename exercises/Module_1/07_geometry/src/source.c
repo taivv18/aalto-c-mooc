@@ -15,6 +15,16 @@ void multi_table(unsigned int xsize, unsigned int ysize)
 
 void draw_triangle(unsigned int size)
 {
+	for (int i = 1; i <= size; ++i) {
+		for (int j = 1; j <= size; ++j) {
+			if (j == size - i || (i < size - j || j < size - i)) {
+				printf(".");
+			} else {
+				printf("#");
+			}
+		}
+		printf("\n");
+	}
 }
 
 double distance(int x, int y)
