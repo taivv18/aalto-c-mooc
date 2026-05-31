@@ -5,9 +5,9 @@
 
 void multi_table(unsigned int xsize, unsigned int ysize)
 {
-	for (size_t i = 1; i <= xsize; ++i) {
-		for (size_t j = 1; j < ysize; ++j) {
-			printf("%4zu ", i * j);
+	for (size_t i = 1; i <= ysize; ++i) {
+		for (size_t j = 1; j <= xsize; ++j) {
+			printf("%4u", i * j);
 		}
 		printf("\n");
 	}
